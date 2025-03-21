@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Quiz</title>
+    <link rel="shortcut icon" href="../../Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./quiz.css">
+</head>
+<body>
+    <div class="container">
+        <div class="contain_1">
+            <div class="headding">
+                <h1>Answer The Question</h1>
+            </div>
+            <div class="form-content">
+                <form action="" name="form_data">
+                    <label for="Name">What is your Name ?</label>
+                    <input class="input" id="Name" type="text" name="name" placeholder="Enter Your Name" autocomplete="off" required><br>
+                    <label for="Age">What is your Age ?</label>
+                    
+                    <input type="number" name="age" id="Age" class="input" placeholder="Enter your age" required><br>
+                    
+                    <label for="Occupation">What is your Occupation ?</label>
+                    <input class="input" id="Occupation" type="text" placeholder="Enter Your Occupation" autocomplete="off" required>
+                    
+                    <div class="bottom">
+                        <button class="Back btn" onclick="window.history.back()">Back</button>
+                        <button class="Submit btn" id="sub">Next</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="contain_2">
+            <div class="content">
+                <h2 class="question">
+                    Discribe The Problem you have.
+                </h2>
+                <textarea name="Problem" id="" placeholder="Describe your problem Here....." cols="75" rows="13"></textarea>
+                <div class="button-collection">
+                    <button class="submit-btn btn" onclick="alert('Are you sure want to submit');location.href='../Completed/complete.html'">Submit</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    </div>
+
+    <script src="./quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Care</title>
+    <link rel="shortcut icon" href="../../Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./care.css">
+</head>
+<body>
+    <div class="container">
+        <div class="contain_1">
+            <div class="headding">
+                <h1>Answer The Question</h1>
+            </div>
+            <div class="form-content">
+                <form action="" name="form_data">
+                    <label for="Name">What is your Name ?</label>
+                    <input class="input" id="Name" type="text" name="name" placeholder="Enter Your Name" autocomplete="off" required><br>
+                    <label for="Age">What is your Age ?</label>
+                    <input type="number" name="age" id="Age" class="input" placeholder="Enter your age" required><br>
+                    
+                    <label for="Occupation">Enter your Mobile no:</label>
+                    <input class="input" id="mobile-number" name="number" type="tel" placeholder="Enter Your Mobile no." autocomplete="off" required>
+                    <div class="bottom">
+                        <button class="Back btn" onclick="window.history.back()">Back</button>
+                       <!-- <input type="submit" class="btn" id="submit_btn" style="margin-left:10px;"> onclick="location.href=''"> -->
+                        <button class="Submit btn" id="sub">Next</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="contain contain_2">
+            <div class="content">
+                <h2 class="question">
+                    Discribe The Problem you have.
+                </h2>
+                <textarea name="Problem" id="" placeholder="Describe your problem Here....." cols="75" rows="13"></textarea>
+                <div class="button-collection">
+                    <button class="next-btn btn" id="next-btn">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="contain contain_3">
+            <h2 class="title-info">Analysing Process</h2>
+            <div class="justification-content">
+                <p class="info">Please take a clear photo of the skin problem you're experiencing and upload it here so that our team can analyze it. This will help us assess the issue more accurately and provide better guidance. Make sure the photo is well-lit and focused on the affected area for the best results.</p>
+            </div>
+            <div class="input-file">
+                <input type="file" name="file" class="btn" id="file" accept=".jpg" required>
+            </div>
+            <div class="btn-holder">
+                <button class="sub-btn btn" onclick="alert('Sure do you want to submit it.....'); location.href = '../Completed/complete.html'">Submit</button>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    </div>
+
+    <script src="./care.js"></script>
+</body>
+</html>

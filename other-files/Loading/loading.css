@@ -1,0 +1,49 @@
+:root{
+    --dim:70px
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+}
+body{
+    background: url(../../Assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background: #efeef1;
+    width: 870px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+}
+.spinner{
+    border:7px solid ;
+    border-color: #066df3 transparent #066df3 #066df3;
+    border-radius: 50%;
+    width: var(--dim);
+    height: var(--dim);
+    animation: 2s spin ease infinite ;
+    opacity: 1;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}

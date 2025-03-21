@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Orbitron:wght@400..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.poppins{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:450;
+    font-style: normal;
+}
+
+.orbitron{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../Assets/background.jpg);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    /* background: #fff; */
+    background: transparent;
+    backdrop-filter: blur(15px);
+    display:flex;
+    justify-content: space-evenly;
+    height:400px;
+    width: 850px;
+    box-shadow: 10px 10px 20px 10px #494848 ;
+}
+
+hr{
+    background: #000;
+    width: 2px;
+    height: 300px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.wrapper{
+    
+    display: inherit;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.designed{animation: move-left 1.2s ease-in 1;}
+
+@keyframes move-left {
+    0%{
+     transform: translatex(350px);
+    } 
+    100%{
+     transform: translatex(0px);
+    } 
+ }
+ 
+
+
+.input-form{
+    display: inherit;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+    transition: 1s ease-in;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    background: #1c04f7;
+    color: azure;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.title{
+    margin-right: 220px;
+    margin-bottom: 50px;
+}
+.btn{
+    margin:15px;
+    transition: 2s ease;
+}
+
+.btn:hover{
+    background: #33228b;
+    cursor: pointer;
+}
+
+.password-field{
+    margin: 20px 0;
+    overflow: hidden;
+}
+label{
+    font-weight: 700;
+}
+
+
+
+@keyframes move-right {
+   0%{
+    transform: translate(-550px);
+   } 
+   100%{
+    transform: translate(0px);
+   } 
+}
+
+.animate{
+    animation: 2s move-right ease 1;
+}
+
+.user-email-id{
+    overflow: hidden;
+}
+
+#Userid{
+    margin-left: 30px;
+    background: #494848;
+    padding: 5px;
+    border-radius: 7px;
+    color: azure;
+}
+#Password{
+    margin-left: 15px;
+    background: #494848;
+    padding: 5px;
+    border-radius: 7px;
+    color: azure;
+}
+::placeholder{
+    color:rgb(162, 167, 171);
+}
