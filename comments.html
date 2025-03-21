@@ -1,0 +1,26 @@
+<label for="Problem">What is your Problem ?</label>
+<select name="" class="input" id="Problem" required>
+    <option value="" selected>Select the option</option>
+    <option value="">Mental Pressure</option>
+    <option value="">Stress And Depression</option>
+    <option value="">Overthinking</option>
+    <option value="">Others</option>
+</select> <br>
+
+
+<script>
+     onclick="location.href='../Completed/complete.html'"
+
+       //form_el = document.forms.form_data;
+       sub_btn = document.querySelectorAll("#submit_btn");
+        sub_btn.addEventListener("submit" , (event) => {
+            event.preventDefault();
+            window.location.replace('../Completed/complete.html');
+        })
+</script>
+
+<style>
+
+
+
+</style>
